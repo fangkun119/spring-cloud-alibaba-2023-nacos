@@ -1,0 +1,49 @@
+server:
+  port: 8050
+
+spring:
+  application:
+    name: tlmall-user-openfeign-demo
+  cloud:
+    nacos:
+      discovery:
+        server-addr: tlmall-nacos-server:8848
+        username: nacos
+        password: nacos
+
+    openfeign:
+      client:
+        config:
+          tlmall-order:
+            loggerLevel: FULL
+            # 连接超时时间
+            connectTimeout: 3000
+            # 请求处理超时时间
+            readTimeout: 5000
+            #指定Feign原生注解契约配置
+            contract: feign.Contract.Default
+            # 配置编解码器
+            encoder: feign.jackson.JacksonEncoder
+            decoder: feign.jackson.JacksonDecoder
+            #配置拦截器
+            requestInterceptors:
+              - org.tuling.tlmalluseropenfeigndemo.interceptor.FeignAuthRequestInterceptor
+
+      httpclient: #feign client使用 Apache HttpClient5
+        hc5:
+          enabled: false
+      okhttp: #feign client使用 okhttp
+        enabled: true
+
+      compression: # 配置 GZIP 来压缩数据
+        request:
+          enabled: true
+          mime-types: text/xml,application/xml,application/json
+          min-request-size: 1024  # 最小请求压缩阈值
+        response:
+          enabled: true
+
+
+logging:
+  level:
+    org.tuling.tlmalluseropenfeigndemo.feign: debug

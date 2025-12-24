@@ -1,3 +1,8 @@
+# idea and flatten-pom
+.flattened-pom.xml
+.idea/
+
+
 # Compiled class file
 *.class
 

@@ -1,0 +1,6 @@
+/Users/ken/Code/idea/spring-claude-alibaba-2023-nacos/microservices/tlmall-user-openfeign-demo/src/main/java/org/nacosdemo/tlmalluseropenfeigndemo/TlmallUserOpenfeignDemoApplication.java
+/Users/ken/Code/idea/spring-claude-alibaba-2023-nacos/microservices/tlmall-user-openfeign-demo/src/main/java/org/nacosdemo/tlmalluseropenfeigndemo/config/FeignConfig.java
+/Users/ken/Code/idea/spring-claude-alibaba-2023-nacos/microservices/tlmall-user-openfeign-demo/src/main/java/org/nacosdemo/tlmalluseropenfeigndemo/controller/UserController.java
+/Users/ken/Code/idea/spring-claude-alibaba-2023-nacos/microservices/tlmall-user-openfeign-demo/src/main/java/org/nacosdemo/tlmalluseropenfeigndemo/feign/OrderFeignService.java
+/Users/ken/Code/idea/spring-claude-alibaba-2023-nacos/microservices/tlmall-user-openfeign-demo/src/main/java/org/nacosdemo/tlmalluseropenfeigndemo/feign/dto/OrderDTO.java
+/Users/ken/Code/idea/spring-claude-alibaba-2023-nacos/microservices/tlmall-user-openfeign-demo/src/main/java/org/nacosdemo/tlmalluseropenfeigndemo/interceptor/FeignAuthRequestInterceptor.java

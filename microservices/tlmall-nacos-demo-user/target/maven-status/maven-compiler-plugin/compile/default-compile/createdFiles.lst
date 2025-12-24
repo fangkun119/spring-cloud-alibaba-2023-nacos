@@ -1,0 +1,5 @@
+org/nacosdemo/tlmalluser/config/RestConfig.class
+org/nacosdemo/tlmalluser/config/LoadBalancerConfig.class
+org/nacosdemo/tlmalluser/controller/UserController.class
+org/nacosdemo/tlmalluser/loadbalancer/MyCustomLoadBalancer.class
+org/nacosdemo/tlmalluser/TlmallUserApplication.class

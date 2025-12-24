@@ -1,0 +1,8 @@
+org/nacosdemo/tlmallorderconfigdemo/service/OrderService.class
+org/nacosdemo/tlmallorderconfigdemo/mapper/OrderMapper.class
+org/nacosdemo/tlmallorderconfigdemo/dto/OrderDTO.class
+org/nacosdemo/tlmallorderconfigdemo/controller/OrderController.class
+org/nacosdemo/tlmallorderconfigdemo/service/impl/OrderServiceImpl.class
+org/nacosdemo/tlmallorderconfigdemo/entity/Order.class
+org/nacosdemo/tlmallorderconfigdemo/controller/TestController.class
+org/nacosdemo/tlmallorderconfigdemo/TlmallOrderConfigDemoApplication.class

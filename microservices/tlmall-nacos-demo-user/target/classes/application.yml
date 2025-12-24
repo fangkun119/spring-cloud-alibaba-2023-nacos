@@ -1,0 +1,23 @@
+server:
+  port: 8050
+
+spring:
+  application:
+    name: tlmall-user
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: tlmall-nacos-server:8848
+        #server-addr: 192.168.65.207:8848,192.168.65.208:8848,192.168.65.213:8848
+        #server-addr: nacos.tlmall.com:8848
+        #namespace: dev
+        cluster-name: SH #上海机房
+        username: nacos
+        password: nacos
+
+    loadbalancer:
+      nacos:
+        enabled: false
+
+

@@ -1,0 +1,7 @@
+/Users/ken/Code/idea/spring-claude-alibaba-2023-nacos/microservices/tlmall-nacos-demo-gateway/src/main/java/org/nacosdemo/tlmallgateway/TlmallGateway01Application.java
+/Users/ken/Code/idea/spring-claude-alibaba-2023-nacos/microservices/tlmall-nacos-demo-gateway/src/main/java/org/nacosdemo/tlmallgateway/config/CorsConfig.java
+/Users/ken/Code/idea/spring-claude-alibaba-2023-nacos/microservices/tlmall-nacos-demo-gateway/src/main/java/org/nacosdemo/tlmallgateway/config/RateLimiterConfig.java
+/Users/ken/Code/idea/spring-claude-alibaba-2023-nacos/microservices/tlmall-nacos-demo-gateway/src/main/java/org/nacosdemo/tlmallgateway/filter/CheckAuthFilter.java
+/Users/ken/Code/idea/spring-claude-alibaba-2023-nacos/microservices/tlmall-nacos-demo-gateway/src/main/java/org/nacosdemo/tlmallgateway/filter/CheckAuthGatewayFilterFactory.java
+/Users/ken/Code/idea/spring-claude-alibaba-2023-nacos/microservices/tlmall-nacos-demo-gateway/src/main/java/org/nacosdemo/tlmallgateway/handler/MyApplicationRunner.java
+/Users/ken/Code/idea/spring-claude-alibaba-2023-nacos/microservices/tlmall-nacos-demo-gateway/src/main/java/org/nacosdemo/tlmallgateway/handler/MyBlockRequestHandler.java

@@ -1,0 +1,6 @@
+org/nacosdemo/tlmalluseropenfeigndemo/TlmallUserOpenfeignDemoApplication.class
+org/nacosdemo/tlmalluseropenfeigndemo/feign/dto/OrderDTO.class
+org/nacosdemo/tlmalluseropenfeigndemo/controller/UserController.class
+org/nacosdemo/tlmalluseropenfeigndemo/config/FeignConfig.class
+org/nacosdemo/tlmalluseropenfeigndemo/feign/OrderFeignService.class
+org/nacosdemo/tlmalluseropenfeigndemo/interceptor/FeignAuthRequestInterceptor.class

@@ -1,0 +1,5 @@
+/Users/ken/Code/idea/spring-claude-alibaba-2023-nacos/microservices/tlmall-nacos-demo-user/src/main/java/org/nacosdemo/tlmalluser/TlmallUserApplication.java
+/Users/ken/Code/idea/spring-claude-alibaba-2023-nacos/microservices/tlmall-nacos-demo-user/src/main/java/org/nacosdemo/tlmalluser/config/LoadBalancerConfig.java
+/Users/ken/Code/idea/spring-claude-alibaba-2023-nacos/microservices/tlmall-nacos-demo-user/src/main/java/org/nacosdemo/tlmalluser/config/RestConfig.java
+/Users/ken/Code/idea/spring-claude-alibaba-2023-nacos/microservices/tlmall-nacos-demo-user/src/main/java/org/nacosdemo/tlmalluser/controller/UserController.java
+/Users/ken/Code/idea/spring-claude-alibaba-2023-nacos/microservices/tlmall-nacos-demo-user/src/main/java/org/nacosdemo/tlmalluser/loadbalancer/MyCustomLoadBalancer.java

@@ -1,0 +1,7 @@
+/Users/ken/Code/idea/spring-claude-alibaba-2023-nacos/microservices/tlmall-nacos-demo-order/src/main/java/org/nacosdemo/tlmallorder/TlmallOrder01Application.java
+/Users/ken/Code/idea/spring-claude-alibaba-2023-nacos/microservices/tlmall-nacos-demo-order/src/main/java/org/nacosdemo/tlmallorder/controller/OrderController.java
+/Users/ken/Code/idea/spring-claude-alibaba-2023-nacos/microservices/tlmall-nacos-demo-order/src/main/java/org/nacosdemo/tlmallorder/dto/OrderDTO.java
+/Users/ken/Code/idea/spring-claude-alibaba-2023-nacos/microservices/tlmall-nacos-demo-order/src/main/java/org/nacosdemo/tlmallorder/entity/Order.java
+/Users/ken/Code/idea/spring-claude-alibaba-2023-nacos/microservices/tlmall-nacos-demo-order/src/main/java/org/nacosdemo/tlmallorder/mapper/OrderMapper.java
+/Users/ken/Code/idea/spring-claude-alibaba-2023-nacos/microservices/tlmall-nacos-demo-order/src/main/java/org/nacosdemo/tlmallorder/service/OrderService.java
+/Users/ken/Code/idea/spring-claude-alibaba-2023-nacos/microservices/tlmall-nacos-demo-order/src/main/java/org/nacosdemo/tlmallorder/service/impl/OrderServiceImpl.java

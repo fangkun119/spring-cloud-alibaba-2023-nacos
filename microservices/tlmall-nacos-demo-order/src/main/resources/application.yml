@@ -1,0 +1,30 @@
+server:
+  port: 8060
+
+spring:
+  application:
+    name: tlmall-order
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: tlmall-nacos-server:8848
+        #server-addr: nacos.tlmall.com:8848
+        #namespace: fox  #指定为fox开发环境的命名空间
+        #namespace: dev  # 指定注册到开发环境
+        #cluster-name: SH  #上海机房
+        username: nacos
+        password: nacos
+
+
+
+  datasource:
+    url: jdbc:mysql://tlmall-mysql:3306/tlmall_order?useSSL=false&characterEncoding=utf8&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    main:
+    allow-bean-definition-overriding: true
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
