@@ -6,42 +6,45 @@ spring:
   cloud:
     nacos:
       discovery:
-        # (1) 基础实验环境配置
+        #### 1. Nacos 注册中心实验
+        # 实验1.1 - 基础实验环境配置
         server-addr: tlmall-nacos-server:8848
         username: nacos
         password: nacos
-        #
-        # (2) 指定命名空间（用于服务逻辑隔离实验）
+        # 实验1.2 指定命名空间（用于服务逻辑隔离实验）
         # namespace: dev
         #
-        # (3) 指定所属集群（用于集群元数据实验）
+        # 实验1.3 指定所属集群（用于集群元数据实验）
         # cluster-name: sh-cluster
         #
-        # (4) 设置实例元数据（用于实例元数据实验）
-        # metadata:
-        #  version: "v2.1.0"
-        #  region: "cn-shanghai"
-        #  usage: "demo"
-        #  weight: "100"
-        #
-        # (5) 指定命名空间（用于安全配置实验）
+        # 实验1.4 设置实例元数据（用于实例元数据实验）
+        metadata:
+          version: "v2.1.0"
+          region: "cn-shanghai"
+          usage: "demo"
+          weight: "100"
+        # 实验1.5 指定命名空间（用于安全配置实验）
         # namespace:fox
         #
-        # (6) 指定Nacos集群地址（Nacos集群实验）
-        # 方案一：直连多节点
+        ### 实验1.6 指定Nacos集群地址（Nacos集群实验）
+        ### 1.6.1(方案一)：直连多节点
         # 优势：无额外单点，客户端自动故障转移
         # 劣势：不便于管理配置和运维，不推荐配置IP
         # server-addr: 192.168.65.207:8848,192.168.65.208:8848,192.168.65.213:8848
-        #
-        # 方案二：通过 Nginx 解耦
+        ### 1.6.2(方案二)：通过 Nginx 解耦
         # 优势：配置集中管理，便于运维
         # 劣势：引入新的单点
         # server-addr: nacos.tlmall.com:8848
+        #
+        ### 2. Spring Cloud LoadBalancer实验
+        # 实验2.2 微服务启动阶段访问下游（方法3）
+        # 操作方法见 DeprecatedSyncLoad 的类注释
+        #
+        # register-enabled: false # 关闭Nacos注册功能，这会导致与注册有关的一切功能都被关闭，包括心跳断连/Meta注册等等
+        # enabled: true           # 因为register-enabled被关闭了，需要显式打开这个配置，保持Nacos Discovery在启动状态
     loadbalancer:
       nacos:
         # Spring Cloud LoadBalancer 实验
         # - 为true时会开启NacosLoadBalancer
         # - 为false时根据其它配置来决定策略，缺省情况下使用RoundRobinBalancer
         enabled: false
-
-

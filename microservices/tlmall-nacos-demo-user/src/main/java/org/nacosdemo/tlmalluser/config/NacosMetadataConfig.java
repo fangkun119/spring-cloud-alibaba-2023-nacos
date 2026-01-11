@@ -9,7 +9,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Map;
 
-@Configuration
+//@Configuration
 public class NacosMetadataConfig {
     @Bean
     public NacosDiscoveryProperties nacosProperties(Environment env) {
