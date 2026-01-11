@@ -2,9 +2,11 @@ package org.nacosdemo.tlmalluser.controller;
 
 import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
+import org.nacosdemo.tlmalluser.config.RestConfig;
 import org.nacosdemo.tlmalluser.config.loadbalancer.RandomLoadBalancerConfig;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.cloud.loadbalancer.annotation.LoadBalancerClients;
@@ -21,6 +23,7 @@ import org.springcloudmvp.tlmallcommon.Result;
 // public class UserController implements InitializingBean {
 public class UserController {
 
+    // @Qualifier(RestConfig.MANUAL_INTERCEPT)
     @Autowired
     private RestTemplate restTemplate;
 

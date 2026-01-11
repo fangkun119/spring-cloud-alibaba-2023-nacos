@@ -1,9 +1,11 @@
 package org.nacosdemo.tlmalluser;
 
+import com.alibaba.cloud.nacos.loadbalancer.NacosLoadBalancer;
 import org.nacosdemo.tlmalluser.config.loadbalancer.IPHashLoadBalancerConfig;
 import org.nacosdemo.tlmalluser.config.loadbalancer.RandomLoadBalancerConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.loadbalancer.annotation.LoadBalancerClient;
 import org.springframework.cloud.loadbalancer.annotation.LoadBalancerClients;
 
@@ -25,7 +27,7 @@ public class TlmallUserApplication {
 
 // (2) 自定义负载均衡实验
 // 方法1：全局生效
-@LoadBalancerClients(defaultConfiguration = IPHashLoadBalancerConfig.class)
+// @LoadBalancerClients(defaultConfiguration = IPHashLoadBalancerConfig.class)
 // 方法2：指定生效范围
 // @LoadBalancerClients({
 //    @LoadBalancerClient(name = "tlmall-order", configuration = IPHashLoadBalancerConfig.class)
@@ -33,7 +35,7 @@ public class TlmallUserApplication {
 @SpringBootApplication
 public class TlmallUserApplication {
    public static void main(String[] args) {
-           SpringApplication.run(TlmallUserApplication.class, args);
+       SpringApplication.run(TlmallUserApplication.class, args);
    }
 }
 
